@@ -8,5 +8,8 @@ xgboost
 optuna
 mlflow
 streamlit
+prefect
+pymongo
+python-dotenv
 
--e .
+# -e .
