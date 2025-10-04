@@ -1,3 +1,5 @@
+# src/components/train.py
+
 import pandas as pd
 import numpy as np
 import os
@@ -24,6 +26,7 @@ from sklearn.ensemble import (
 from xgboost import XGBClassifier
 from catboost import CatBoostClassifier
 from utils.mlflow_tracker import MLFlowTracker
+from prefect import task
 
 
 @dataclass
@@ -94,3 +97,15 @@ class TrainingData:
 
         except Exception as e:
             raise CustomException(e, sys)
+        
+
+
+@task
+def trainer(train_arr, test_arr):
+    try:
+        training = TrainingData()
+        acc, classification = training.initiate_model_trainer(train_arr, test_arr)
+        return acc, classification
+
+    except Exception as e:
+        raise CustomException(e, sys)

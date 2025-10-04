@@ -1,3 +1,5 @@
+# src/components/data_transformation.py
+
 import pandas as pd
 import numpy as np
 import os
@@ -12,6 +14,7 @@ from utils.objects import make_directories, save_object
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
+from prefect import task
 
 
 @dataclass
@@ -62,7 +65,7 @@ class DataTransformation:
 
             logging.info("obtaining preprocessing object")
 
-            preprocessing_obj = self.get_data_transformer_object()
+            preprocessing_obj = self.get_prepocessor_instance()
 
             target_column_name = "survived"
 
@@ -109,3 +112,12 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)
 
+
+@task
+def data_transformation(train_path, test_path):
+    try:
+        transformation = DataTransformation()
+        train_arr, test_arr, _ = transformation.initiate_data_transformation(train_path, test_path)
+        return train_arr, test_arr
+    except Exception as e:
+        raise CustomException(e, sys)

@@ -1,3 +1,5 @@
+# src/components/data_ingestion.py
+
 import pandas as pd
 import numpy as np
 import os
@@ -10,6 +12,7 @@ from dataclasses import dataclass
 from config.logger import logging
 from sklearn.model_selection import train_test_split
 from utils.objects import make_directories
+from prefect import task
 
 @dataclass
 class DataIngestionConfig:
@@ -33,7 +36,7 @@ class DataIngestion:
             logging.info("Split completed successfully")
 
             logging.info("Saving data")
-            
+
             make_directories(
                 [
                     self.ingestion_config.train_data_path,
@@ -52,3 +55,13 @@ class DataIngestion:
         
         except Exception as e:
             raise CustomException(e, sys)
+        
+
+@task 
+def data_ingestion():
+    try:
+        ingestion = DataIngestion()
+        return ingestion.initailize_data_ingestion()
+    
+    except Exception as e:
+        raise CustomException(e, sys)

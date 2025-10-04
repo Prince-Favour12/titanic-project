@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/750547348515713527/3c8db7dce99146ff8d0032c99385b433/artifacts
+end_time: 1759563927656
+entry_point_name: ''
+experiment_id: '750547348515713527'
+lifecycle_stage: active
+run_id: 3c8db7dce99146ff8d0032c99385b433
+run_name: Logistic Classifier_20251004_084516
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759563916123
+status: 3
+tags: []
+user_id: DELL

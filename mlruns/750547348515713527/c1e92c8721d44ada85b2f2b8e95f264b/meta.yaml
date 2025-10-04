@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/750547348515713527/c1e92c8721d44ada85b2f2b8e95f264b/artifacts
+end_time: 1759563953922
+entry_point_name: ''
+experiment_id: '750547348515713527'
+lifecycle_stage: active
+run_id: c1e92c8721d44ada85b2f2b8e95f264b
+run_name: XGBRegressor_20251004_084540
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759563940949
+status: 3
+tags: []
+user_id: DELL
