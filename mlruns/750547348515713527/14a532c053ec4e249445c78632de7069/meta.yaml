@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/750547348515713527/14a532c053ec4e249445c78632de7069/artifacts
+end_time: 1759568571814
+entry_point_name: ''
+experiment_id: '750547348515713527'
+lifecycle_stage: active
+run_id: 14a532c053ec4e249445c78632de7069
+run_name: K-Neighbours Classifier_20251004_100240
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759568560959
+status: 3
+tags: []
+user_id: DELL

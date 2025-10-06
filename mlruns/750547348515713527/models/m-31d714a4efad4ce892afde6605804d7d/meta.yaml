@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/750547348515713527/models/m-31d714a4efad4ce892afde6605804d7d/artifacts
+creation_timestamp: 1759568561467
+experiment_id: '750547348515713527'
+last_updated_timestamp: 1759568571757
+model_id: m-31d714a4efad4ce892afde6605804d7d
+model_type: ''
+name: K-Neighbours_Classifier
+source_run_id: 14a532c053ec4e249445c78632de7069
+status: 2
+status_message: null

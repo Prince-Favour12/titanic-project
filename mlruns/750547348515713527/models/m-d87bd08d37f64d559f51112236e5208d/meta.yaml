@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/750547348515713527/models/m-d87bd08d37f64d559f51112236e5208d/artifacts
+creation_timestamp: 1759568584989
+experiment_id: '750547348515713527'
+last_updated_timestamp: 1759568596478
+model_id: m-d87bd08d37f64d559f51112236e5208d
+model_type: ''
+name: CatBoosting_Classifier
+source_run_id: bf75a0a734064c4aa3aa7cb614eaa27d
+status: 2
+status_message: null

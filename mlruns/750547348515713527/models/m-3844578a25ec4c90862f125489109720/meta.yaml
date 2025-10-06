@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/750547348515713527/models/m-3844578a25ec4c90862f125489109720/artifacts
+creation_timestamp: 1759568597387
+experiment_id: '750547348515713527'
+last_updated_timestamp: 1759568614990
+model_id: m-3844578a25ec4c90862f125489109720
+model_type: ''
+name: AdaBoost_Classifier
+source_run_id: b3923ff6939d44219d505296a76bc82a
+status: 2
+status_message: null

@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/750547348515713527/models/m-7b96abd7c3eb4aedb54385ad6bdcee15/artifacts
+creation_timestamp: 1759568549778
+experiment_id: '750547348515713527'
+last_updated_timestamp: 1759568560752
+model_id: m-7b96abd7c3eb4aedb54385ad6bdcee15
+model_type: ''
+name: Logistic_Classifier
+source_run_id: 8f35193ce10a4ebaa6e9412ff012a204
+status: 2
+status_message: null

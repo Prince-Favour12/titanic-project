@@ -12,8 +12,9 @@ class SavePathConfig:
     DATA_PATH: str = os.getenv("DATA_PATH")
     TEST_DATA_PATH: str = os.getenv("TEST_DATA_PATH")
     TRAIN_DATA_PATH: str = os.getenv("TRAIN_DATA_PATH")
-    PREPROCESSOR_PIPELINE: str = os.getenv("PREPROCESSOR_PIPELINE")
-    TRAINING_PIPELINE: str = os.getenv("TRAINING_PIPELINE")
+    ARTIFACT_DIR = "artifact"
+    TRAINING_PIPELINE = os.path.join(ARTIFACT_DIR, "train_model.pkl")
+    PREPROCESSOR_PIPELINE = os.path.join(ARTIFACT_DIR, "preprocessor.pkl")
 
 class MlflowConfig:
     MLFLOW_TRACKING_URI: str = os.getenv("MLFLOW_TRACKING_URI")

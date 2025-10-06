@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/750547348515713527/bf75a0a734064c4aa3aa7cb614eaa27d/artifacts
+end_time: 1759568596527
+entry_point_name: ''
+experiment_id: '750547348515713527'
+lifecycle_stage: active
+run_id: bf75a0a734064c4aa3aa7cb614eaa27d
+run_name: CatBoosting Classifier_20251004_100304
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759568584523
+status: 3
+tags: []
+user_id: DELL

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/750547348515713527/b3923ff6939d44219d505296a76bc82a/artifacts
+end_time: 1759568615107
+entry_point_name: ''
+experiment_id: '750547348515713527'
+lifecycle_stage: active
+run_id: b3923ff6939d44219d505296a76bc82a
+run_name: AdaBoost Classifier_20251004_100316
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759568596796
+status: 3
+tags: []
+user_id: DELL
